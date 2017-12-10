@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">VezbiFragmenti</string>
+    <string name="testbutton1">Test Button 1</string>
+    <string name="text_1">Text 1</string>
+    <string name="test_button_2">Test Button 2</string>
+    <string name="text_2">Text 2</string>
+    <string name="text_button_3">Text Button 3</string>
+    <string name="text_3">Text 3</string>
+    <string name="text_button_4">Text Button 4</string>
+    <string name="text_4">Text 4</string>
+</resources>
