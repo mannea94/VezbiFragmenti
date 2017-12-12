@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,6 +23,8 @@ public class Fragment1 extends Fragment{
     public Unbinder mUnBinder;
     @BindView(R.id.textView)
     TextView textView;
+    @BindView(R.id.button1)
+    Button button1;
 
     @Nullable
     @Override
@@ -32,7 +35,7 @@ public class Fragment1 extends Fragment{
         return view;
     }
 
-    @OnClick(R.id.button)
+    @OnClick(R.id.button1)
     public void buttonClick(){
         Toast.makeText(getActivity(), "toast Fragment 1", Toast.LENGTH_SHORT).show();
     }

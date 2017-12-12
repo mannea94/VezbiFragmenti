@@ -1,5 +1,6 @@
 package com.example.manne.vezbifragmenti;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,6 +8,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
@@ -23,11 +25,17 @@ import butterknife.Unbinder;
 public class Fragment3 extends Fragment {
     @BindView(R.id.imageView)
     ImageView imageView;
+    @BindView(R.id.button3)
+    Button button3;
+
     Unbinder mUnBinder;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState){
+
+
+
         View view = inflater.inflate(R.layout.fragment3, null);
         mUnBinder = ButterKnife.bind(this, view);
         Picasso.with(getActivity())
@@ -38,7 +46,9 @@ public class Fragment3 extends Fragment {
         return view;
     }
 
-    @OnClick(R.id.button)
+
+
+    @OnClick(R.id.button3)
     public void buttonClick(View view){
         ((MainActivity)getActivity()).pager.setCurrentItem(3);
     }
